@@ -1,0 +1,995 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Class: RedditKit::Client
+  
+    &mdash; Documentation by YARD 0.8.7
+  
+</title>
+
+  <link rel="stylesheet" href="../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '../';
+  framesUrl = "../frames.html#!" + escape(window.location.href);
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="../_index.html">Index (C)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../RedditKit.html" title="RedditKit (module)">RedditKit</a></span></span>
+     &raquo; 
+    <span class="title">Client</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="../method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="../file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Class: RedditKit::Client
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName">Object</span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next">RedditKit::Client</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+      <dt class="r2">Includes:</dt>
+      <dd class="r2"><span class='object_link'><a href="Client/Account.html" title="RedditKit::Client::Account (module)">Account</a></span>, <span class='object_link'><a href="Client/Apps.html" title="RedditKit::Client::Apps (module)">Apps</a></span>, <span class='object_link'><a href="Client/Captcha.html" title="RedditKit::Client::Captcha (module)">Captcha</a></span>, <span class='object_link'><a href="Client/Comments.html" title="RedditKit::Client::Comments (module)">Comments</a></span>, <span class='object_link'><a href="Client/Flair.html" title="RedditKit::Client::Flair (module)">Flair</a></span>, <span class='object_link'><a href="Client/Links.html" title="RedditKit::Client::Links (module)">Links</a></span>, <span class='object_link'><a href="Client/Miscellaneous.html" title="RedditKit::Client::Miscellaneous (module)">Miscellaneous</a></span>, <span class='object_link'><a href="Client/Moderation.html" title="RedditKit::Client::Moderation (module)">Moderation</a></span>, <span class='object_link'><a href="Client/Multireddits.html" title="RedditKit::Client::Multireddits (module)">Multireddits</a></span>, <span class='object_link'><a href="Client/PrivateMessages.html" title="RedditKit::Client::PrivateMessages (module)">PrivateMessages</a></span>, <span class='object_link'><a href="Client/Search.html" title="RedditKit::Client::Search (module)">Search</a></span>, <span class='object_link'><a href="Client/Subreddits.html" title="RedditKit::Client::Subreddits (module)">Subreddits</a></span>, <span class='object_link'><a href="Client/Users.html" title="RedditKit::Client::Users (module)">Users</a></span>, <span class='object_link'><a href="Client/Utilities.html" title="RedditKit::Client::Utilities (module)">Utilities</a></span>, <span class='object_link'><a href="Client/Voting.html" title="RedditKit::Client::Voting (module)">Voting</a></span>, <span class='object_link'><a href="Client/Wiki.html" title="RedditKit::Client::Wiki (module)">Wiki</a></span></dd>
+      
+    
+  
+  
+  
+    <dt class="r1 last">Defined in:</dt>
+    <dd class="r1 last">lib/redditkit/client.rb<span class="defines">,<br />
+  lib/redditkit/client/apps.rb,<br /> lib/redditkit/client/wiki.rb,<br /> lib/redditkit/client/links.rb,<br /> lib/redditkit/client/flair.rb,<br /> lib/redditkit/client/users.rb,<br /> lib/redditkit/client/voting.rb,<br /> lib/redditkit/client/search.rb,<br /> lib/redditkit/client/account.rb,<br /> lib/redditkit/client/captcha.rb,<br /> lib/redditkit/client/comments.rb,<br /> lib/redditkit/client/utilities.rb,<br /> lib/redditkit/client/subreddits.rb,<br /> lib/redditkit/client/moderation.rb,<br /> lib/redditkit/client/multireddits.rb,<br /> lib/redditkit/client/miscellaneous.rb,<br /> lib/redditkit/client/private_messages.rb</span>
+</dd>
+  
+</dl>
+<div class="clear"></div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>The client for the reddit API, handling all interactions with reddit&#39;s
+servers.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><h2>Defined Under Namespace</h2>
+<p class="children">
+  
+    
+      <strong class="modules">Modules:</strong> <span class='object_link'><a href="Client/Account.html" title="RedditKit::Client::Account (module)">Account</a></span>, <span class='object_link'><a href="Client/Apps.html" title="RedditKit::Client::Apps (module)">Apps</a></span>, <span class='object_link'><a href="Client/Captcha.html" title="RedditKit::Client::Captcha (module)">Captcha</a></span>, <span class='object_link'><a href="Client/Comments.html" title="RedditKit::Client::Comments (module)">Comments</a></span>, <span class='object_link'><a href="Client/Flair.html" title="RedditKit::Client::Flair (module)">Flair</a></span>, <span class='object_link'><a href="Client/Links.html" title="RedditKit::Client::Links (module)">Links</a></span>, <span class='object_link'><a href="Client/Miscellaneous.html" title="RedditKit::Client::Miscellaneous (module)">Miscellaneous</a></span>, <span class='object_link'><a href="Client/Moderation.html" title="RedditKit::Client::Moderation (module)">Moderation</a></span>, <span class='object_link'><a href="Client/Multireddits.html" title="RedditKit::Client::Multireddits (module)">Multireddits</a></span>, <span class='object_link'><a href="Client/PrivateMessages.html" title="RedditKit::Client::PrivateMessages (module)">PrivateMessages</a></span>, <span class='object_link'><a href="Client/Search.html" title="RedditKit::Client::Search (module)">Search</a></span>, <span class='object_link'><a href="Client/Subreddits.html" title="RedditKit::Client::Subreddits (module)">Subreddits</a></span>, <span class='object_link'><a href="Client/Users.html" title="RedditKit::Client::Users (module)">Users</a></span>, <span class='object_link'><a href="Client/Utilities.html" title="RedditKit::Client::Utilities (module)">Utilities</a></span>, <span class='object_link'><a href="Client/Voting.html" title="RedditKit::Client::Voting (module)">Voting</a></span>, <span class='object_link'><a href="Client/Wiki.html" title="RedditKit::Client::Wiki (module)">Wiki</a></span>
+    
+  
+    
+  
+</p>
+
+
+
+
+  <h2>Instance Attribute Summary <small>(<a href="#" class="summary_toggle">collapse</a>)</small></h2>
+  <ul class="summary">
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#api_endpoint-instance_method" title="#api_endpoint (instance method)">- (Object) <strong>api_endpoint</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute api_endpoint.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#authentication_endpoint-instance_method" title="#authentication_endpoint (instance method)">- (Object) <strong>authentication_endpoint</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute authentication_endpoint.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#cookie-instance_method" title="#cookie (instance method)">- (Object) <strong>cookie</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute cookie.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#current_user-instance_method" title="#current_user (instance method)">- (Object) <strong>current_user</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute current_user.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#middleware-instance_method" title="#middleware (instance method)">- (Object) <strong>middleware</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute middleware.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#modhash-instance_method" title="#modhash (instance method)">- (Object) <strong>modhash</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute modhash.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#user_agent-instance_method" title="#user_agent (instance method)">- (Object) <strong>user_agent</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute user_agent.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#username-instance_method" title="#username (instance method)">- (Object) <strong>username</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute username.</p>
+</div></span>
+  
+</li>
+
+    
+  </ul>
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#initialize-instance_method" title="#initialize (instance method)">- (Client) <strong>initialize</strong>(username = nil, password = nil) </a>
+    
+
+    
+  </span>
+  
+  
+    <span class="note title constructor">constructor</span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>A new instance of Client.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Client/Wiki.html" title="RedditKit::Client::Wiki (module)">Wiki</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Client/Wiki.html#add_wiki_editor-instance_method" title="RedditKit::Client::Wiki#add_wiki_editor (method)">#add_wiki_editor</a></span>, <span class='object_link'><a href="Client/Wiki.html#edit_wiki_page-instance_method" title="RedditKit::Client::Wiki#edit_wiki_page (method)">#edit_wiki_page</a></span>, <span class='object_link'><a href="Client/Wiki.html#hide_wiki_revision-instance_method" title="RedditKit::Client::Wiki#hide_wiki_revision (method)">#hide_wiki_revision</a></span>, <span class='object_link'><a href="Client/Wiki.html#remove_wiki_editor-instance_method" title="RedditKit::Client::Wiki#remove_wiki_editor (method)">#remove_wiki_editor</a></span>, <span class='object_link'><a href="Client/Wiki.html#revert_to_revision-instance_method" title="RedditKit::Client::Wiki#revert_to_revision (method)">#revert_to_revision</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Client/Voting.html" title="RedditKit::Client::Voting (module)">Voting</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Client/Voting.html#downvote-instance_method" title="RedditKit::Client::Voting#downvote (method)">#downvote</a></span>, <span class='object_link'><a href="Client/Voting.html#upvote-instance_method" title="RedditKit::Client::Voting#upvote (method)">#upvote</a></span>, <span class='object_link'><a href="Client/Voting.html#vote-instance_method" title="RedditKit::Client::Voting#vote (method)">#vote</a></span>, <span class='object_link'><a href="Client/Voting.html#withdraw_vote-instance_method" title="RedditKit::Client::Voting#withdraw_vote (method)">#withdraw_vote</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Client/Users.html" title="RedditKit::Client::Users (module)">Users</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Client/Users.html#friend-instance_method" title="RedditKit::Client::Users#friend (method)">#friend</a></span>, <span class='object_link'><a href="Client/Users.html#friends-instance_method" title="RedditKit::Client::Users#friends (method)">#friends</a></span>, <span class='object_link'><a href="Client/Users.html#my_content-instance_method" title="RedditKit::Client::Users#my_content (method)">#my_content</a></span>, <span class='object_link'><a href="Client/Users.html#register-instance_method" title="RedditKit::Client::Users#register (method)">#register</a></span>, <span class='object_link'><a href="Client/Users.html#unfriend-instance_method" title="RedditKit::Client::Users#unfriend (method)">#unfriend</a></span>, <span class='object_link'><a href="Client/Users.html#user-instance_method" title="RedditKit::Client::Users#user (method)">#user</a></span>, <span class='object_link'><a href="Client/Users.html#user_content-instance_method" title="RedditKit::Client::Users#user_content (method)">#user_content</a></span>, <span class='object_link'><a href="Client/Users.html#username_available%3F-instance_method" title="RedditKit::Client::Users#username_available? (method)">#username_available?</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Client/Subreddits.html" title="RedditKit::Client::Subreddits (module)">Subreddits</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Client/Subreddits.html#random_subreddit-instance_method" title="RedditKit::Client::Subreddits#random_subreddit (method)">#random_subreddit</a></span>, <span class='object_link'><a href="Client/Subreddits.html#recommended_subreddits-instance_method" title="RedditKit::Client::Subreddits#recommended_subreddits (method)">#recommended_subreddits</a></span>, <span class='object_link'><a href="Client/Subreddits.html#search_subreddits_by_name-instance_method" title="RedditKit::Client::Subreddits#search_subreddits_by_name (method)">#search_subreddits_by_name</a></span>, <span class='object_link'><a href="Client/Subreddits.html#subreddit-instance_method" title="RedditKit::Client::Subreddits#subreddit (method)">#subreddit</a></span>, <span class='object_link'><a href="Client/Subreddits.html#subreddits-instance_method" title="RedditKit::Client::Subreddits#subreddits (method)">#subreddits</a></span>, <span class='object_link'><a href="Client/Subreddits.html#subreddits_by_topic-instance_method" title="RedditKit::Client::Subreddits#subreddits_by_topic (method)">#subreddits_by_topic</a></span>, <span class='object_link'><a href="Client/Subreddits.html#subscribe-instance_method" title="RedditKit::Client::Subreddits#subscribe (method)">#subscribe</a></span>, <span class='object_link'><a href="Client/Subreddits.html#subscribed_subreddits-instance_method" title="RedditKit::Client::Subreddits#subscribed_subreddits (method)">#subscribed_subreddits</a></span>, <span class='object_link'><a href="Client/Subreddits.html#unsubscribe-instance_method" title="RedditKit::Client::Subreddits#unsubscribe (method)">#unsubscribe</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Client/Search.html" title="RedditKit::Client::Search (module)">Search</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Client/Search.html#search-instance_method" title="RedditKit::Client::Search#search (method)">#search</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Client/PrivateMessages.html" title="RedditKit::Client::PrivateMessages (module)">PrivateMessages</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Client/PrivateMessages.html#block_author_of_message-instance_method" title="RedditKit::Client::PrivateMessages#block_author_of_message (method)">#block_author_of_message</a></span>, <span class='object_link'><a href="Client/PrivateMessages.html#mark_as_read-instance_method" title="RedditKit::Client::PrivateMessages#mark_as_read (method)">#mark_as_read</a></span>, <span class='object_link'><a href="Client/PrivateMessages.html#mark_as_unread-instance_method" title="RedditKit::Client::PrivateMessages#mark_as_unread (method)">#mark_as_unread</a></span>, <span class='object_link'><a href="Client/PrivateMessages.html#messages-instance_method" title="RedditKit::Client::PrivateMessages#messages (method)">#messages</a></span>, <span class='object_link'><a href="Client/PrivateMessages.html#send_message-instance_method" title="RedditKit::Client::PrivateMessages#send_message (method)">#send_message</a></span>, <span class='object_link'><a href="Client/PrivateMessages.html#unblock-instance_method" title="RedditKit::Client::PrivateMessages#unblock (method)">#unblock</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Client/Multireddits.html" title="RedditKit::Client::Multireddits (module)">Multireddits</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Client/Multireddits.html#add_subreddit_to_multireddit-instance_method" title="RedditKit::Client::Multireddits#add_subreddit_to_multireddit (method)">#add_subreddit_to_multireddit</a></span>, <span class='object_link'><a href="Client/Multireddits.html#copy_multireddit-instance_method" title="RedditKit::Client::Multireddits#copy_multireddit (method)">#copy_multireddit</a></span>, <span class='object_link'><a href="Client/Multireddits.html#create_multireddit-instance_method" title="RedditKit::Client::Multireddits#create_multireddit (method)">#create_multireddit</a></span>, <span class='object_link'><a href="Client/Multireddits.html#delete_multireddit-instance_method" title="RedditKit::Client::Multireddits#delete_multireddit (method)">#delete_multireddit</a></span>, <span class='object_link'><a href="Client/Multireddits.html#multireddit-instance_method" title="RedditKit::Client::Multireddits#multireddit (method)">#multireddit</a></span>, <span class='object_link'><a href="Client/Multireddits.html#multireddit_description-instance_method" title="RedditKit::Client::Multireddits#multireddit_description (method)">#multireddit_description</a></span>, <span class='object_link'><a href="Client/Multireddits.html#my_multireddits-instance_method" title="RedditKit::Client::Multireddits#my_multireddits (method)">#my_multireddits</a></span>, <span class='object_link'><a href="Client/Multireddits.html#remove_subreddit_from_multireddit-instance_method" title="RedditKit::Client::Multireddits#remove_subreddit_from_multireddit (method)">#remove_subreddit_from_multireddit</a></span>, <span class='object_link'><a href="Client/Multireddits.html#rename_multireddit-instance_method" title="RedditKit::Client::Multireddits#rename_multireddit (method)">#rename_multireddit</a></span>, <span class='object_link'><a href="Client/Multireddits.html#set_multireddit_description-instance_method" title="RedditKit::Client::Multireddits#set_multireddit_description (method)">#set_multireddit_description</a></span>, <span class='object_link'><a href="Client/Multireddits.html#update_multireddit-instance_method" title="RedditKit::Client::Multireddits#update_multireddit (method)">#update_multireddit</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Client/Moderation.html" title="RedditKit::Client::Moderation (module)">Moderation</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Client/Moderation.html#accept_moderator_invitation-instance_method" title="RedditKit::Client::Moderation#accept_moderator_invitation (method)">#accept_moderator_invitation</a></span>, <span class='object_link'><a href="Client/Moderation.html#approve-instance_method" title="RedditKit::Client::Moderation#approve (method)">#approve</a></span>, <span class='object_link'><a href="Client/Moderation.html#ban-instance_method" title="RedditKit::Client::Moderation#ban (method)">#ban</a></span>, <span class='object_link'><a href="Client/Moderation.html#contributors_to_subreddit-instance_method" title="RedditKit::Client::Moderation#contributors_to_subreddit (method)">#contributors_to_subreddit</a></span>, <span class='object_link'><a href="Client/Moderation.html#distinguish-instance_method" title="RedditKit::Client::Moderation#distinguish (method)">#distinguish</a></span>, <span class='object_link'><a href="Client/Moderation.html#ignore_reports-instance_method" title="RedditKit::Client::Moderation#ignore_reports (method)">#ignore_reports</a></span>, <span class='object_link'><a href="Client/Moderation.html#moderation_log-instance_method" title="RedditKit::Client::Moderation#moderation_log (method)">#moderation_log</a></span>, <span class='object_link'><a href="Client/Moderation.html#moderators_of_subreddit-instance_method" title="RedditKit::Client::Moderation#moderators_of_subreddit (method)">#moderators_of_subreddit</a></span>, <span class='object_link'><a href="Client/Moderation.html#remove-instance_method" title="RedditKit::Client::Moderation#remove (method)">#remove</a></span>, <span class='object_link'><a href="Client/Moderation.html#reset_subreddit_header-instance_method" title="RedditKit::Client::Moderation#reset_subreddit_header (method)">#reset_subreddit_header</a></span>, <span class='object_link'><a href="Client/Moderation.html#resign_as_contributor-instance_method" title="RedditKit::Client::Moderation#resign_as_contributor (method)">#resign_as_contributor</a></span>, <span class='object_link'><a href="Client/Moderation.html#resign_as_moderator-instance_method" title="RedditKit::Client::Moderation#resign_as_moderator (method)">#resign_as_moderator</a></span>, <span class='object_link'><a href="Client/Moderation.html#set_contest_mode-instance_method" title="RedditKit::Client::Moderation#set_contest_mode (method)">#set_contest_mode</a></span>, <span class='object_link'><a href="Client/Moderation.html#set_sticky_post-instance_method" title="RedditKit::Client::Moderation#set_sticky_post (method)">#set_sticky_post</a></span>, <span class='object_link'><a href="Client/Moderation.html#set_subreddit_settings-instance_method" title="RedditKit::Client::Moderation#set_subreddit_settings (method)">#set_subreddit_settings</a></span>, <span class='object_link'><a href="Client/Moderation.html#unban-instance_method" title="RedditKit::Client::Moderation#unban (method)">#unban</a></span>, <span class='object_link'><a href="Client/Moderation.html#unignore_reports-instance_method" title="RedditKit::Client::Moderation#unignore_reports (method)">#unignore_reports</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Client/Miscellaneous.html" title="RedditKit::Client::Miscellaneous (module)">Miscellaneous</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Client/Miscellaneous.html#delete-instance_method" title="RedditKit::Client::Miscellaneous#delete (method)">#delete</a></span>, <span class='object_link'><a href="Client/Miscellaneous.html#edit-instance_method" title="RedditKit::Client::Miscellaneous#edit (method)">#edit</a></span>, <span class='object_link'><a href="Client/Miscellaneous.html#report-instance_method" title="RedditKit::Client::Miscellaneous#report (method)">#report</a></span>, <span class='object_link'><a href="Client/Miscellaneous.html#save-instance_method" title="RedditKit::Client::Miscellaneous#save (method)">#save</a></span>, <span class='object_link'><a href="Client/Miscellaneous.html#unsave-instance_method" title="RedditKit::Client::Miscellaneous#unsave (method)">#unsave</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Client/Links.html" title="RedditKit::Client::Links (module)">Links</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Client/Links.html#front_page-instance_method" title="RedditKit::Client::Links#front_page (method)">#front_page</a></span>, <span class='object_link'><a href="Client/Links.html#hide-instance_method" title="RedditKit::Client::Links#hide (method)">#hide</a></span>, <span class='object_link'><a href="Client/Links.html#link-instance_method" title="RedditKit::Client::Links#link (method)">#link</a></span>, <span class='object_link'><a href="Client/Links.html#links-instance_method" title="RedditKit::Client::Links#links (method)">#links</a></span>, <span class='object_link'><a href="Client/Links.html#links_with_domain-instance_method" title="RedditKit::Client::Links#links_with_domain (method)">#links_with_domain</a></span>, <span class='object_link'><a href="Client/Links.html#mark_nsfw-instance_method" title="RedditKit::Client::Links#mark_nsfw (method)">#mark_nsfw</a></span>, <span class='object_link'><a href="Client/Links.html#mark_sfw-instance_method" title="RedditKit::Client::Links#mark_sfw (method)">#mark_sfw</a></span>, <span class='object_link'><a href="Client/Links.html#random_link-instance_method" title="RedditKit::Client::Links#random_link (method)">#random_link</a></span>, <span class='object_link'><a href="Client/Links.html#submit-instance_method" title="RedditKit::Client::Links#submit (method)">#submit</a></span>, <span class='object_link'><a href="Client/Links.html#unhide-instance_method" title="RedditKit::Client::Links#unhide (method)">#unhide</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Client/Flair.html" title="RedditKit::Client::Flair (module)">Flair</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Client/Flair.html#apply_flair_template-instance_method" title="RedditKit::Client::Flair#apply_flair_template (method)">#apply_flair_template</a></span>, <span class='object_link'><a href="Client/Flair.html#clear_flair_templates-instance_method" title="RedditKit::Client::Flair#clear_flair_templates (method)">#clear_flair_templates</a></span>, <span class='object_link'><a href="Client/Flair.html#create_flair_template-instance_method" title="RedditKit::Client::Flair#create_flair_template (method)">#create_flair_template</a></span>, <span class='object_link'><a href="Client/Flair.html#delete_flair_template-instance_method" title="RedditKit::Client::Flair#delete_flair_template (method)">#delete_flair_template</a></span>, <span class='object_link'><a href="Client/Flair.html#delete_user_flair-instance_method" title="RedditKit::Client::Flair#delete_user_flair (method)">#delete_user_flair</a></span>, <span class='object_link'><a href="Client/Flair.html#flair_list-instance_method" title="RedditKit::Client::Flair#flair_list (method)">#flair_list</a></span>, <span class='object_link'><a href="Client/Flair.html#set_flair-instance_method" title="RedditKit::Client::Flair#set_flair (method)">#set_flair</a></span>, <span class='object_link'><a href="Client/Flair.html#set_flair_options-instance_method" title="RedditKit::Client::Flair#set_flair_options (method)">#set_flair_options</a></span>, <span class='object_link'><a href="Client/Flair.html#set_flair_with_csv-instance_method" title="RedditKit::Client::Flair#set_flair_with_csv (method)">#set_flair_with_csv</a></span>, <span class='object_link'><a href="Client/Flair.html#toggle_flair-instance_method" title="RedditKit::Client::Flair#toggle_flair (method)">#toggle_flair</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Client/Comments.html" title="RedditKit::Client::Comments (module)">Comments</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Client/Comments.html#comment-instance_method" title="RedditKit::Client::Comments#comment (method)">#comment</a></span>, <span class='object_link'><a href="Client/Comments.html#comments-instance_method" title="RedditKit::Client::Comments#comments (method)">#comments</a></span>, <span class='object_link'><a href="Client/Comments.html#submit_comment-instance_method" title="RedditKit::Client::Comments#submit_comment (method)">#submit_comment</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Client/Captcha.html" title="RedditKit::Client::Captcha (module)">Captcha</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Client/Captcha.html#captcha_url-instance_method" title="RedditKit::Client::Captcha#captcha_url (method)">#captcha_url</a></span>, <span class='object_link'><a href="Client/Captcha.html#needs_captcha%3F-instance_method" title="RedditKit::Client::Captcha#needs_captcha? (method)">#needs_captcha?</a></span>, <span class='object_link'><a href="Client/Captcha.html#new_captcha_identifier-instance_method" title="RedditKit::Client::Captcha#new_captcha_identifier (method)">#new_captcha_identifier</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Client/Apps.html" title="RedditKit::Client::Apps (module)">Apps</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Client/Apps.html#add_developer-instance_method" title="RedditKit::Client::Apps#add_developer (method)">#add_developer</a></span>, <span class='object_link'><a href="Client/Apps.html#create_app-instance_method" title="RedditKit::Client::Apps#create_app (method)">#create_app</a></span>, <span class='object_link'><a href="Client/Apps.html#delete_app-instance_method" title="RedditKit::Client::Apps#delete_app (method)">#delete_app</a></span>, <span class='object_link'><a href="Client/Apps.html#remove_developer-instance_method" title="RedditKit::Client::Apps#remove_developer (method)">#remove_developer</a></span>, <span class='object_link'><a href="Client/Apps.html#revoke_app-instance_method" title="RedditKit::Client::Apps#revoke_app (method)">#revoke_app</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Client/Account.html" title="RedditKit::Client::Account (module)">Account</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Client/Account.html#sign_in-instance_method" title="RedditKit::Client::Account#sign_in (method)">#sign_in</a></span>, <span class='object_link'><a href="Client/Account.html#sign_out-instance_method" title="RedditKit::Client::Account#sign_out (method)">#sign_out</a></span>, <span class='object_link'><a href="Client/Account.html#signed_in%3F-instance_method" title="RedditKit::Client::Account#signed_in? (method)">#signed_in?</a></span>, <span class='object_link'><a href="Client/Account.html#update_account-instance_method" title="RedditKit::Client::Account#update_account (method)">#update_account</a></span>, <span class='object_link'><a href="Client/Account.html#update_session-instance_method" title="RedditKit::Client::Account#update_session (method)">#update_session</a></span></p>
+<div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <div class="method_details first">
+  <h3 class="signature first" id="initialize-instance_method">
+  
+    - (<tt><span class='object_link'><a href="" title="RedditKit::Client (class)">Client</a></span></tt>) <strong>initialize</strong>(username = nil, password = nil) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns a new instance of Client</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redditkit/client.rb', line 54</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_initialize'>initialize</span><span class='lparen'>(</span><span class='id identifier rubyid_username'>username</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='comma'>,</span> <span class='id identifier rubyid_password'>password</span> <span class='op'>=</span> <span class='kw'>nil</span><span class='rparen'>)</span>
+  <span class='ivar'>@username</span> <span class='op'>=</span> <span class='id identifier rubyid_username'>username</span>
+  <span class='ivar'>@password</span> <span class='op'>=</span> <span class='id identifier rubyid_password'>password</span>
+
+  <span class='ivar'>@cookie</span> <span class='op'>=</span> <span class='kw'>nil</span>
+  <span class='ivar'>@modhash</span> <span class='op'>=</span> <span class='kw'>nil</span>
+
+  <span class='kw'>unless</span> <span class='ivar'>@username</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span> <span class='kw'>or</span> <span class='ivar'>@password</span><span class='period'>.</span><span class='id identifier rubyid_nil?'>nil?</span>
+    <span class='id identifier rubyid_sign_in'>sign_in</span> <span class='ivar'>@username</span><span class='comma'>,</span> <span class='ivar'>@password</span> 
+  <span class='kw'>end</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+  
+</div>
+
+  <div id="instance_attr_details" class="attr_details">
+    <h2>Instance Attribute Details</h2>
+    
+      
+      <span id="api_endpoint=-instance_method"></span>
+      <div class="method_details first">
+  <h3 class="signature first" id="api_endpoint-instance_method">
+  
+    - (<tt>Object</tt>) <strong>api_endpoint</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute api_endpoint</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+49
+50
+51</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redditkit/client.rb', line 49</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_api_endpoint'>api_endpoint</span>
+  <span class='ivar'>@api_endpoint</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="authentication_endpoint=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="authentication_endpoint-instance_method">
+  
+    - (<tt>Object</tt>) <strong>authentication_endpoint</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute authentication_endpoint</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+50
+51
+52</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redditkit/client.rb', line 50</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_authentication_endpoint'>authentication_endpoint</span>
+  <span class='ivar'>@authentication_endpoint</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="cookie-instance_method">
+  
+    - (<tt>Object</tt>) <strong>cookie</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute cookie</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+46
+47
+48</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redditkit/client.rb', line 46</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_cookie'>cookie</span>
+  <span class='ivar'>@cookie</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="current_user-instance_method">
+  
+    - (<tt>Object</tt>) <strong>current_user</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute current_user</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+45
+46
+47</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redditkit/client.rb', line 45</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_current_user'>current_user</span>
+  <span class='ivar'>@current_user</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="middleware=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="middleware-instance_method">
+  
+    - (<tt>Object</tt>) <strong>middleware</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute middleware</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+52
+53
+54</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redditkit/client.rb', line 52</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_middleware'>middleware</span>
+  <span class='ivar'>@middleware</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="modhash-instance_method">
+  
+    - (<tt>Object</tt>) <strong>modhash</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute modhash</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+47
+48
+49</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redditkit/client.rb', line 47</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_modhash'>modhash</span>
+  <span class='ivar'>@modhash</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="user_agent=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="user_agent-instance_method">
+  
+    - (<tt>Object</tt>) <strong>user_agent</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute user_agent</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+51
+52
+53</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redditkit/client.rb', line 51</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_user_agent'>user_agent</span>
+  <span class='ivar'>@user_agent</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="username-instance_method">
+  
+    - (<tt>Object</tt>) <strong>username</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute username</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+44
+45
+46</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redditkit/client.rb', line 44</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_username'>username</span>
+  <span class='ivar'>@username</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+
+</div>
+
+    <div id="footer">
+  Generated on Sat Nov  9 08:09:56 2013 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7 (ruby-2.0.0).
+</div>
+
+  </body>
+</html>
