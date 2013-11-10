@@ -1,0 +1,69 @@
+#content {
+  @include outer-container;
+  @include box-sizing(border-box);
+
+  padding: 0px 30px;
+}
+
+.feature, .wrap-up {
+  padding: 50px 0px 60px 0px;
+  border-top: 1px solid #E3DECA;
+
+  @include clearfix;
+}
+
+header {
+  margin: 75px 0px 50px 0px;
+  text-align: none;
+
+  @include media($mobile) {
+    margin: 50px 0px 50px 0px;
+  }
+}
+
+header nav {
+  overflow: hidden;
+  margin-bottom: 40px;
+
+  @include media($header) {
+    margin-bottom: 10px;
+  }
+}
+
+#title {
+  display: inline-block;
+  margin-top: 2px;
+
+  font-size: 30px;
+  text-align: left;
+
+  @include media($header) {
+    display: block;
+
+    font-size: 34px;
+    text-align: center;
+  }
+}
+
+#main-navigation .buttons {
+  float: right;
+
+  @include media($header) {
+    display: none;
+    float: none;
+  }
+}
+
+.mobile {
+  display: none;
+  text-align: center;
+
+  @include media($header) {
+    display: block; 
+    margin-top: 15px;
+  }
+}
+
+.wrap-up .buttons {
+  margin: 25px 0px;
+}

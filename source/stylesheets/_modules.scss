@@ -1,0 +1,40 @@
+.button {
+  color: #67A14F;
+
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 22px;
+
+  border-radius: 50px;
+
+  display: inline-block;
+  padding: 7px 5px 5px 5px;
+  width: 140px;
+
+  border: 2px solid #67A14F;
+
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+
+  text-align: center;
+
+  &:hover {
+    color: #F5F2E4;
+    background: #67A14F;
+    border: 2px solid #67A14F;
+  }
+
+  @include media($mobile) {
+    font-size: 14px;
+    padding: 5px 1px 3px 1px;
+    width: 120px;
+  }
+}
+
+.wf-active .button {
+  font-weight: 600;
+
+  @include media($mobile) {
+    width: 123px;
+  }
+}

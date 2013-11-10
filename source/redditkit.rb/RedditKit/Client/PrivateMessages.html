@@ -1,0 +1,848 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Module: RedditKit::Client::PrivateMessages
+  
+    &mdash; Documentation by YARD 0.8.7
+  
+</title>
+
+  <link rel="stylesheet" href="../../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '../../';
+  framesUrl = "../../frames.html#!" + escape(window.location.href);
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="../../_index.html">Index (P)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../../RedditKit.html" title="RedditKit (module)">RedditKit</a></span></span> &raquo; <span class='title'><span class='object_link'><a href="../Client.html" title="RedditKit::Client (class)">Client</a></span></span>
+     &raquo; 
+    <span class="title">PrivateMessages</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../../class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="../../method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="../../file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Module: RedditKit::Client::PrivateMessages
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+  
+    
+  
+    
+  
+  
+    <dt class="r1">Included in:</dt>
+    <dd class="r1"><span class='object_link'><a href="../Client.html" title="RedditKit::Client (class)">RedditKit::Client</a></span></dd>
+    
+  
+  
+    <dt class="r2 last">Defined in:</dt>
+    <dd class="r2 last">lib/redditkit/client/private_messages.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>Methods for retrieving and sending private messages.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+
+
+
+
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#block_author_of_message-instance_method" title="#block_author_of_message (instance method)">- (Object) <strong>block_author_of_message</strong>(message) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Blocks the author of a private message or comment.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#mark_as_read-instance_method" title="#mark_as_read (instance method)">- (Object) <strong>mark_as_read</strong>(message) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Marks a message as read.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#mark_as_unread-instance_method" title="#mark_as_unread (instance method)">- (Object) <strong>mark_as_unread</strong>(message) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Marks a message as unread.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#messages-instance_method" title="#messages (instance method)">- (Array&lt;RedditKit::Comment, RedditKit::PrivateMessage&gt;) <strong>messages</strong>(options = {}) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Gets the current user&#39;s private messages or comment replies.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#send_message-instance_method" title="#send_message (instance method)">- (Object) <strong>send_message</strong>(message, recipient, options = {}) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Send a message to another reddit user.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#unblock-instance_method" title="#unblock (instance method)">- (Object) <strong>unblock</strong>(user) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Unblocks a user.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="block_author_of_message-instance_method">
+  
+    - (<tt>Object</tt>) <strong>block_author_of_message</strong>(message) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Blocks the author of a private message or comment. Users cannot be blocked
+based on username as reddit only allows you to block those who have
+harassed you (thus leaving a message in your inbox).</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>message</span>
+      
+      
+        <span class='type'>(<tt>String</tt>, <tt><span class='object_link'><a href="../PrivateMessage.html" title="RedditKit::PrivateMessage (class)">RedditKit::PrivateMessage</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>A private message&#39;s full name, or a RedditKit::PrivateMessage.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+59
+60
+61
+62</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redditkit/client/private_messages.rb', line 59</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_block_author_of_message'>block_author_of_message</span><span class='lparen'>(</span><span class='id identifier rubyid_message'>message</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_parameters'>parameters</span> <span class='op'>=</span> <span class='lbrace'>{</span> <span class='symbol'>:id</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_extract_full_name'>extract_full_name</span><span class='lparen'>(</span><span class='id identifier rubyid_message'>message</span><span class='rparen'>)</span> <span class='rbrace'>}</span>
+  <span class='id identifier rubyid_post'>post</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>api/block</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_parameters'>parameters</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="mark_as_read-instance_method">
+  
+    - (<tt>Object</tt>) <strong>mark_as_read</strong>(message) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Marks a message as read.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>message</span>
+      
+      
+        <span class='type'>(<tt>String</tt>, <tt><span class='object_link'><a href="../PrivateMessage.html" title="RedditKit::PrivateMessage (class)">RedditKit::PrivateMessage</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>A private message&#39;s full name, or a RedditKit::PrivateMessage.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+42
+43
+44
+45</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redditkit/client/private_messages.rb', line 42</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_mark_as_read'>mark_as_read</span><span class='lparen'>(</span><span class='id identifier rubyid_message'>message</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_parameters'>parameters</span> <span class='op'>=</span> <span class='lbrace'>{</span> <span class='symbol'>:id</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_extract_full_name'>extract_full_name</span><span class='lparen'>(</span><span class='id identifier rubyid_message'>message</span><span class='rparen'>)</span> <span class='rbrace'>}</span>
+  <span class='id identifier rubyid_post'>post</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>api/read_message</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_parameters'>parameters</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="mark_as_unread-instance_method">
+  
+    - (<tt>Object</tt>) <strong>mark_as_unread</strong>(message) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Marks a message as unread.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>message</span>
+      
+      
+        <span class='type'>(<tt>String</tt>, <tt><span class='object_link'><a href="../PrivateMessage.html" title="RedditKit::PrivateMessage (class)">RedditKit::PrivateMessage</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>A private message&#39;s full name, or a RedditKit::PrivateMessage.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+50
+51
+52
+53</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redditkit/client/private_messages.rb', line 50</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_mark_as_unread'>mark_as_unread</span><span class='lparen'>(</span><span class='id identifier rubyid_message'>message</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_parameters'>parameters</span> <span class='op'>=</span> <span class='lbrace'>{</span> <span class='symbol'>:id</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_extract_full_name'>extract_full_name</span><span class='lparen'>(</span><span class='id identifier rubyid_message'>message</span><span class='rparen'>)</span> <span class='rbrace'>}</span>
+  <span class='id identifier rubyid_post'>post</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>api/unread_message</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_parameters'>parameters</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="messages-instance_method">
+  
+    - (<tt>Array&lt;<span class='object_link'><a href="../Comment.html" title="RedditKit::Comment (class)">RedditKit::Comment</a></span>, <span class='object_link'><a href="../PrivateMessage.html" title="RedditKit::PrivateMessage (class)">RedditKit::PrivateMessage</a></span>&gt;</tt>) <strong>messages</strong>(options = {}) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Gets the current user&#39;s private messages or comment replies.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>options</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a customizable set of options</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  
+    
+    
+    <p class="tag_title">Options Hash (<tt>options</tt>):</p>
+    <ul class="option">
+      
+        <li>
+          <span class="name">:category</span>
+          <span class="type">(<tt>inbox</tt>, <tt>unread</tt>, <tt>sent</tt>, <tt>messages</tt>, <tt>mentions</tt>, <tt>moderator</tt>, <tt>comments</tt>, <tt>selfreply</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>The category from which to return messages.</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:limit</span>
+          <span class="type">(<tt>1..100</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>The number of messages to return.</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:before</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Only return subreddits before this id.</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:after</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Only return subreddits after this id.</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:mark</span>
+          <span class="type">(<tt>Boolean</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>Whether to mark requested messages as read.</p>
+</div>
+          
+        </li>
+      
+    </ul>
+  
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;<span class='object_link'><a href="../Comment.html" title="RedditKit::Comment (class)">RedditKit::Comment</a></span>, <span class='object_link'><a href="../PrivateMessage.html" title="RedditKit::PrivateMessage (class)">RedditKit::PrivateMessage</a></span>&gt;</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+17
+18
+19
+20
+21
+22
+23</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redditkit/client/private_messages.rb', line 17</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_messages'>messages</span><span class='lparen'>(</span><span class='id identifier rubyid_options'>options</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_category'>category</span> <span class='op'>=</span> <span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='symbol'>:category</span><span class='rbracket'>]</span> <span class='op'>||</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>inbox</span><span class='tstring_end'>&#39;</span></span>
+  <span class='id identifier rubyid_path'>path</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>message/</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_category'>category</span><span class='embexpr_end'>}</span><span class='tstring_content'>.json</span><span class='tstring_end'>&quot;</span></span>
+  <span class='id identifier rubyid_options'>options</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span> <span class='symbol'>:category</span>
+
+  <span class='id identifier rubyid_objects_from_response'>objects_from_response</span><span class='lparen'>(</span><span class='symbol'>:get</span><span class='comma'>,</span> <span class='id identifier rubyid_path'>path</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="send_message-instance_method">
+  
+    - (<tt>Object</tt>) <strong>send_message</strong>(message, recipient, options = {}) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Send a message to another reddit user.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>message</span>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The text of the message.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>recipient</span>
+      
+      
+        <span class='type'>(<tt>String</tt>, <tt><span class='object_link'><a href="../User.html" title="RedditKit::User (class)">RedditKit::User</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The recipient of the message.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>options</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>{}</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>a customizable set of options</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+  
+    
+    
+    
+    
+    
+    
+    <p class="tag_title">Options Hash (<tt>options</tt>):</p>
+    <ul class="option">
+      
+        <li>
+          <span class="name">:subject</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>The subject of the message.</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:captcha_identifier</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>A CAPTCHA identifier to send with the message, if the current user is
+required to fill one out.</p>
+</div>
+          
+        </li>
+      
+        <li>
+          <span class="name">:captcha_value</span>
+          <span class="type">(<tt>String</tt>)</span>
+          <span class="default">
+            
+          </span>
+          
+            &mdash; <div class='inline'>
+<p>The value of the CAPTCHA to send with the message, if the current user is
+required to fill one out.</p>
+</div>
+          
+        </li>
+      
+    </ul>
+  
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+32
+33
+34
+35
+36
+37</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redditkit/client/private_messages.rb', line 32</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_send_message'>send_message</span><span class='lparen'>(</span><span class='id identifier rubyid_message'>message</span><span class='comma'>,</span> <span class='id identifier rubyid_recipient'>recipient</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_username'>username</span> <span class='op'>=</span> <span class='id identifier rubyid_extract_string'>extract_string</span><span class='lparen'>(</span><span class='id identifier rubyid_recipient'>recipient</span><span class='comma'>,</span> <span class='symbol'>:username</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_parameters'>parameters</span> <span class='op'>=</span> <span class='lbrace'>{</span> <span class='symbol'>:to</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_username'>username</span><span class='comma'>,</span> <span class='symbol'>:text</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_message'>message</span><span class='comma'>,</span> <span class='symbol'>:subject</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='symbol'>:subject</span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='symbol'>:captcha</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='symbol'>:captcha_value</span><span class='rbracket'>]</span><span class='comma'>,</span> <span class='symbol'>:iden</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_options'>options</span><span class='lbracket'>[</span><span class='symbol'>:captcha_identifier</span><span class='rbracket'>]</span> <span class='rbrace'>}</span>
+
+  <span class='id identifier rubyid_post'>post</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>api/compose</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_parameters'>parameters</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="unblock-instance_method">
+  
+    - (<tt>Object</tt>) <strong>unblock</strong>(user) 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Unblocks a user.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>user</span>
+      
+      
+        <span class='type'>(<tt>String</tt>, <tt><span class='object_link'><a href="../User.html" title="RedditKit::User (class)">RedditKit::User</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>A user&#39;s username, or a RedditKit::User.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+67
+68
+69
+70</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redditkit/client/private_messages.rb', line 67</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_unblock'>unblock</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_enemy_name'>enemy_name</span> <span class='op'>=</span> <span class='id identifier rubyid_extract_string'>extract_string</span><span class='lparen'>(</span><span class='id identifier rubyid_user'>user</span><span class='comma'>,</span> <span class='symbol'>:username</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_unfriend_request'>unfriend_request</span> <span class='symbol'>:container</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_current_user'>current_user</span><span class='period'>.</span><span class='id identifier rubyid_full_name'>full_name</span><span class='comma'>,</span> <span class='symbol'>:name</span> <span class='op'>=&gt;</span> <span class='id identifier rubyid_enemy_name'>enemy_name</span><span class='comma'>,</span> <span class='symbol'>:type</span> <span class='op'>=&gt;</span> <span class='symbol'>:enemy</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+    <div id="footer">
+  Generated on Sat Nov  9 08:09:55 2013 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7 (ruby-2.0.0).
+</div>
+
+  </body>
+</html>

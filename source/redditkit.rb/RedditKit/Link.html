@@ -1,0 +1,2573 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Class: RedditKit::Link
+  
+    &mdash; Documentation by YARD 0.8.7
+  
+</title>
+
+  <link rel="stylesheet" href="../css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="../css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '../';
+  framesUrl = "../frames.html#!" + escape(window.location.href);
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="../js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="../_index.html">Index (L)</a> &raquo;
+    <span class='title'><span class='object_link'><a href="../RedditKit.html" title="RedditKit (module)">RedditKit</a></span></span>
+     &raquo; 
+    <span class="title">Link</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="../class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="../method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="../file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><h1>Class: RedditKit::Link
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+    <dt class="r1">Inherits:</dt>
+    <dd class="r1">
+      <span class="inheritName"><span class='object_link'><a href="Thing.html" title="RedditKit::Thing (class)">Thing</a></span></span>
+      
+        <ul class="fullTree">
+          <li>Object</li>
+          
+            <li class="next"><span class='object_link'><a href="Base.html" title="RedditKit::Base (class)">Base</a></span></li>
+          
+            <li class="next"><span class='object_link'><a href="Thing.html" title="RedditKit::Thing (class)">Thing</a></span></li>
+          
+            <li class="next">RedditKit::Link</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+      </dd>
+    
+  
+  
+    
+  
+    
+      <dt class="r2">Includes:</dt>
+      <dd class="r2"><span class='object_link'><a href="Creatable.html" title="RedditKit::Creatable (module)">Creatable</a></span>, <span class='object_link'><a href="Votable.html" title="RedditKit::Votable (module)">Votable</a></span></dd>
+      
+    
+  
+  
+  
+    <dt class="r1 last">Defined in:</dt>
+    <dd class="r1 last">lib/redditkit/link.rb</dd>
+  
+</dl>
+<div class="clear"></div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>A class representing a link.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+
+
+
+  <h2>Instance Attribute Summary <small>(<a href="#" class="summary_toggle">collapse</a>)</small></h2>
+  <ul class="summary">
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#approved_by-instance_method" title="#approved_by (instance method)">- (Object) <strong>approved_by</strong> </a>
+    
+
+    
+      (also: #approved?)
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The username of the moderator who approved this link, if it has been
+approved.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#author-instance_method" title="#author (instance method)">- (Object) <strong>author</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The username of the link&#39;s author.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#author_flair_css_class-instance_method" title="#author_flair_css_class (instance method)">- (Object) <strong>author_flair_css_class</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The author&#39;s flair CSS class, if they have flair assigned to them.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#author_flair_text-instance_method" title="#author_flair_text (instance method)">- (Object) <strong>author_flair_text</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The author&#39;s flair text, if they have flair assigned to them.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#banned_by-instance_method" title="#banned_by (instance method)">- (Object) <strong>banned_by</strong> </a>
+    
+
+    
+      (also: #banned?)
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The username of the moderator who banned this link, if it was banned.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#distinguished-instance_method" title="#distinguished (instance method)">- (Object) <strong>distinguished</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The distinguished status of the link.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#domain-instance_method" title="#domain (instance method)">- (Object) <strong>domain</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The link&#39;s domain.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#edited-instance_method" title="#edited (instance method)">- (Object) <strong>edited</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The time of the link&#39;s most recent edit, or nil if it has never been
+edited.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#hidden-instance_method" title="#hidden (instance method)">- (Object) <strong>hidden</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Whether the current user has hidden this link.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#is_self-instance_method" title="#is_self (instance method)">- (Object) <strong>is_self</strong> </a>
+    
+
+    
+      (also: #self_post?)
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Whether the link is a self post.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#link_flair_css_class-instance_method" title="#link_flair_css_class (instance method)">- (Object) <strong>link_flair_css_class</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The link&#39;s flair CSS class, if it has flair assigned to it.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#link_flair_text-instance_method" title="#link_flair_text (instance method)">- (Object) <strong>link_flair_text</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The link&#39;s flair text, if it has flair assigned to it.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#media-instance_method" title="#media (instance method)">- (Object) <strong>media</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>A hash containing further information about the link&#39;s media.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#media_embed-instance_method" title="#media_embed (instance method)">- (Object) <strong>media_embed</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>A hash contains details for embedding the content in a web page.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#num_comments-instance_method" title="#num_comments (instance method)">- (Object) <strong>num_comments</strong> </a>
+    
+
+    
+      (also: #total_comments)
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The number of comments on the link.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#num_reports-instance_method" title="#num_reports (instance method)">- (Object) <strong>num_reports</strong> </a>
+    
+
+    
+      (also: #total_reports)
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The number of reports on the link.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#over_18-instance_method" title="#over_18 (instance method)">- (Object) <strong>over_18</strong> </a>
+    
+
+    
+      (also: #nsfw?)
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Whether the link has been marked as NSFW.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#permalink-instance_method" title="#permalink (instance method)">- (Object) <strong>permalink</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The link to the post on reddit.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#saved-instance_method" title="#saved (instance method)">- (Object) <strong>saved</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Whether the current user has saved this link.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#selftext-instance_method" title="#selftext (instance method)">- (Object) <strong>selftext</strong> </a>
+    
+
+    
+      (also: #text)
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The text for the link, if it is a self post, in Markdown.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#selftext_html-instance_method" title="#selftext_html (instance method)">- (Object) <strong>selftext_html</strong> </a>
+    
+
+    
+      (also: #text_html)
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The text for the link, if it is a self post, in HTML.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#stickied-instance_method" title="#stickied (instance method)">- (Object) <strong>stickied</strong> </a>
+    
+
+    
+      (also: #sticky?)
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Whether the link has been marked as sticky.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#subreddit-instance_method" title="#subreddit (instance method)">- (Object) <strong>subreddit</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The name of the subreddit to which the link was posted.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#subreddit_id-instance_method" title="#subreddit_id (instance method)">- (Object) <strong>subreddit_id</strong> </a>
+    
+
+    
+      (also: #subreddit_full_name)
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The full name of the subreddit to which the link was posted.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#thumbnail-instance_method" title="#thumbnail (instance method)">- (Object) <strong>thumbnail</strong> </a>
+    
+
+    
+      (also: #thumbnail_url)
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The URL to the thumbnail for the link.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#title-instance_method" title="#title (instance method)">- (Object) <strong>title</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The title of the link.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#url-instance_method" title="#url (instance method)">- (Object) <strong>url</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The link&#39;s URL.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#visited-instance_method" title="#visited (instance method)">- (Object) <strong>visited</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Whether the link has been visited by the current user.</p>
+</div></span>
+  
+</li>
+
+    
+  </ul>
+
+
+
+  
+  
+  <h3 class="inherited">Attributes inherited from <span class='object_link'><a href="Thing.html" title="RedditKit::Thing (class)">Thing</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Thing.html#id-instance_method" title="RedditKit::Thing#id (method)">#id</a></span>, <span class='object_link'><a href="Thing.html#kind-instance_method" title="RedditKit::Thing#kind (method)">#kind</a></span></p>
+
+  
+  
+  <h3 class="inherited">Attributes inherited from <span class='object_link'><a href="Base.html" title="RedditKit::Base (class)">Base</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Base.html#attributes-instance_method" title="RedditKit::Base#attributes (method)">#attributes</a></span></p>
+
+
+  
+    <h2>
+      Instance Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#image_link%3F-instance_method" title="#image_link? (instance method)">- (Boolean) <strong>image_link?</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Determines whether a link has an image URL.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#short_link-instance_method" title="#short_link (instance method)">- (String) <strong>short_link</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the short URL for a link.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#showing_link_score%3F-instance_method" title="#showing_link_score? (instance method)">- (Boolean) <strong>showing_link_score?</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Determines whether a link is showing its score.</p>
+</div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Votable.html" title="RedditKit::Votable (module)">Votable</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Votable.html#downvoted%3F-instance_method" title="RedditKit::Votable#downvoted? (method)">#downvoted?</a></span>, <span class='object_link'><a href="Votable.html#downvotes-instance_method" title="RedditKit::Votable#downvotes (method)">#downvotes</a></span>, <span class='object_link'><a href="Votable.html#score-instance_method" title="RedditKit::Votable#score (method)">#score</a></span>, <span class='object_link'><a href="Votable.html#upvoted%3F-instance_method" title="RedditKit::Votable#upvoted? (method)">#upvoted?</a></span>, <span class='object_link'><a href="Votable.html#upvotes-instance_method" title="RedditKit::Votable#upvotes (method)">#upvotes</a></span>, <span class='object_link'><a href="Votable.html#voted%3F-instance_method" title="RedditKit::Votable#voted? (method)">#voted?</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="Creatable.html" title="RedditKit::Creatable (module)">Creatable</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Creatable.html#created_at-instance_method" title="RedditKit::Creatable#created_at (method)">#created_at</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods inherited from <span class='object_link'><a href="Thing.html" title="RedditKit::Thing (class)">Thing</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Thing.html#%3D%3D-instance_method" title="RedditKit::Thing#== (method)">#==</a></span>, <span class='object_link'><a href="Thing.html#full_name-instance_method" title="RedditKit::Thing#full_name (method)">#full_name</a></span></p>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  <h3 class="inherited">Methods inherited from <span class='object_link'><a href="Base.html" title="RedditKit::Base (class)">Base</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="Base.html#%5B%5D-instance_method" title="RedditKit::Base#[] (method)">#[]</a></span>, <span class='object_link'><a href="Base.html#attr_reader-class_method" title="RedditKit::Base.attr_reader (method)">attr_reader</a></span>, <span class='object_link'><a href="Base.html#initialize-instance_method" title="RedditKit::Base#initialize (method)">#initialize</a></span></p>
+<div id="constructor_details" class="method_details_list">
+  <h2>Constructor Details</h2>
+  
+    <p class="notice">This class inherits a constructor from <span class='object_link'><a href="Base.html#initialize-instance_method" title="RedditKit::Base#initialize (method)">RedditKit::Base</a></span></p>
+  
+</div>
+
+  <div id="instance_attr_details" class="attr_details">
+    <h2>Instance Attribute Details</h2>
+    
+      
+      <span id=""></span>
+      <div class="method_details first">
+  <h3 class="signature first" id="approved_by-instance_method">
+  
+    - (<tt>Object</tt>) <strong>approved_by</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+    <span class="aliases">Also known as:
+    <span class="names"><span id='approved?-instance_method'>approved?</span></span>
+    </span>
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The username of the moderator who approved this link, if it has been
+approved.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+13
+14
+15</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redditkit/link.rb', line 13</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_approved_by'>approved_by</span>
+  <span class='ivar'>@approved_by</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="author-instance_method">
+  
+    - (<tt>Object</tt>) <strong>author</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The username of the link&#39;s author.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+16
+17
+18</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redditkit/link.rb', line 16</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_author'>author</span>
+  <span class='ivar'>@author</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="author_flair_css_class-instance_method">
+  
+    - (<tt>Object</tt>) <strong>author_flair_css_class</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The author&#39;s flair CSS class, if they have flair assigned to them.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+19
+20
+21</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redditkit/link.rb', line 19</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_author_flair_css_class'>author_flair_css_class</span>
+  <span class='ivar'>@author_flair_css_class</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="author_flair_text-instance_method">
+  
+    - (<tt>Object</tt>) <strong>author_flair_text</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The author&#39;s flair text, if they have flair assigned to them.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+22
+23
+24</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redditkit/link.rb', line 22</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_author_flair_text'>author_flair_text</span>
+  <span class='ivar'>@author_flair_text</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="banned_by-instance_method">
+  
+    - (<tt>Object</tt>) <strong>banned_by</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+    <span class="aliases">Also known as:
+    <span class="names"><span id='banned?-instance_method'>banned?</span></span>
+    </span>
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The username of the moderator who banned this link, if it was banned.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+25
+26
+27</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redditkit/link.rb', line 25</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_banned_by'>banned_by</span>
+  <span class='ivar'>@banned_by</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="distinguished-instance_method">
+  
+    - (<tt>Object</tt>) <strong>distinguished</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The distinguished status of the link. This is either &#39;yes&#39;,
+&#39;no&#39;, &#39;admin&#39; or &#39;special&#39;.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+28
+29
+30</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redditkit/link.rb', line 28</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_distinguished'>distinguished</span>
+  <span class='ivar'>@distinguished</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="domain-instance_method">
+  
+    - (<tt>Object</tt>) <strong>domain</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The link&#39;s domain.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+31
+32
+33</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redditkit/link.rb', line 31</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_domain'>domain</span>
+  <span class='ivar'>@domain</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="edited-instance_method">
+  
+    - (<tt>Object</tt>) <strong>edited</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The time of the link&#39;s most recent edit, or nil if it has never been
+edited.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+34
+35
+36</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redditkit/link.rb', line 34</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_edited'>edited</span>
+  <span class='ivar'>@edited</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="hidden-instance_method">
+  
+    - (<tt>Object</tt>) <strong>hidden</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Whether the current user has hidden this link.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+37
+38
+39</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redditkit/link.rb', line 37</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_hidden'>hidden</span>
+  <span class='ivar'>@hidden</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="is_self-instance_method">
+  
+    - (<tt>Object</tt>) <strong>is_self</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+    <span class="aliases">Also known as:
+    <span class="names"><span id='self_post?-instance_method'>self_post?</span></span>
+    </span>
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Whether the link is a self post.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+40
+41
+42</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redditkit/link.rb', line 40</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_is_self'>is_self</span>
+  <span class='ivar'>@is_self</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="link_flair_css_class-instance_method">
+  
+    - (<tt>Object</tt>) <strong>link_flair_css_class</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The link&#39;s flair CSS class, if it has flair assigned to it.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+43
+44
+45</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redditkit/link.rb', line 43</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_link_flair_css_class'>link_flair_css_class</span>
+  <span class='ivar'>@link_flair_css_class</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="link_flair_text-instance_method">
+  
+    - (<tt>Object</tt>) <strong>link_flair_text</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The link&#39;s flair text, if it has flair assigned to it.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+46
+47
+48</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redditkit/link.rb', line 46</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_link_flair_text'>link_flair_text</span>
+  <span class='ivar'>@link_flair_text</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="media-instance_method">
+  
+    - (<tt>Object</tt>) <strong>media</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>A hash containing further information about the link&#39;s media. For
+example, this could contain details about a YouTube video.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+49
+50
+51</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redditkit/link.rb', line 49</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_media'>media</span>
+  <span class='ivar'>@media</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="media_embed-instance_method">
+  
+    - (<tt>Object</tt>) <strong>media_embed</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>A hash contains details for embedding the content in a web page.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+52
+53
+54</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redditkit/link.rb', line 52</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_media_embed'>media_embed</span>
+  <span class='ivar'>@media_embed</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="num_comments-instance_method">
+  
+    - (<tt>Object</tt>) <strong>num_comments</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+    <span class="aliases">Also known as:
+    <span class="names"><span id='total_comments-instance_method'>total_comments</span></span>
+    </span>
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The number of comments on the link.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+55
+56
+57</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redditkit/link.rb', line 55</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_num_comments'>num_comments</span>
+  <span class='ivar'>@num_comments</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="num_reports-instance_method">
+  
+    - (<tt>Object</tt>) <strong>num_reports</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+    <span class="aliases">Also known as:
+    <span class="names"><span id='total_reports-instance_method'>total_reports</span></span>
+    </span>
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The number of reports on the link.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+58
+59
+60</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redditkit/link.rb', line 58</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_num_reports'>num_reports</span>
+  <span class='ivar'>@num_reports</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="over_18-instance_method">
+  
+    - (<tt>Object</tt>) <strong>over_18</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+    <span class="aliases">Also known as:
+    <span class="names"><span id='nsfw?-instance_method'>nsfw?</span></span>
+    </span>
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Whether the link has been marked as NSFW.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+61
+62
+63</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redditkit/link.rb', line 61</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_over_18'>over_18</span>
+  <span class='ivar'>@over_18</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="permalink-instance_method">
+  
+    - (<tt>Object</tt>) <strong>permalink</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The link to the post on reddit.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+64
+65
+66</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redditkit/link.rb', line 64</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_permalink'>permalink</span>
+  <span class='ivar'>@permalink</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="saved-instance_method">
+  
+    - (<tt>Object</tt>) <strong>saved</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Whether the current user has saved this link.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+67
+68
+69</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redditkit/link.rb', line 67</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_saved'>saved</span>
+  <span class='ivar'>@saved</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="selftext-instance_method">
+  
+    - (<tt>Object</tt>) <strong>selftext</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+    <span class="aliases">Also known as:
+    <span class="names"><span id='text-instance_method'>text</span></span>
+    </span>
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The text for the link, if it is a self post, in Markdown.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+70
+71
+72</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redditkit/link.rb', line 70</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_selftext'>selftext</span>
+  <span class='ivar'>@selftext</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="selftext_html-instance_method">
+  
+    - (<tt>Object</tt>) <strong>selftext_html</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+    <span class="aliases">Also known as:
+    <span class="names"><span id='text_html-instance_method'>text_html</span></span>
+    </span>
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The text for the link, if it is a self post, in HTML.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+73
+74
+75</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redditkit/link.rb', line 73</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_selftext_html'>selftext_html</span>
+  <span class='ivar'>@selftext_html</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="stickied-instance_method">
+  
+    - (<tt>Object</tt>) <strong>stickied</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+    <span class="aliases">Also known as:
+    <span class="names"><span id='sticky?-instance_method'>sticky?</span></span>
+    </span>
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Whether the link has been marked as sticky.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+76
+77
+78</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redditkit/link.rb', line 76</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_stickied'>stickied</span>
+  <span class='ivar'>@stickied</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="subreddit-instance_method">
+  
+    - (<tt>Object</tt>) <strong>subreddit</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The name of the subreddit to which the link was posted.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+79
+80
+81</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redditkit/link.rb', line 79</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_subreddit'>subreddit</span>
+  <span class='ivar'>@subreddit</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="subreddit_id-instance_method">
+  
+    - (<tt>Object</tt>) <strong>subreddit_id</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+    <span class="aliases">Also known as:
+    <span class="names"><span id='subreddit_full_name-instance_method'>subreddit_full_name</span></span>
+    </span>
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The full name of the subreddit to which the link was posted.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+82
+83
+84</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redditkit/link.rb', line 82</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_subreddit_id'>subreddit_id</span>
+  <span class='ivar'>@subreddit_id</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="thumbnail-instance_method">
+  
+    - (<tt>Object</tt>) <strong>thumbnail</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+    <span class="aliases">Also known as:
+    <span class="names"><span id='thumbnail_url-instance_method'>thumbnail_url</span></span>
+    </span>
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The URL to the thumbnail for the link.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+85
+86
+87</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redditkit/link.rb', line 85</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_thumbnail'>thumbnail</span>
+  <span class='ivar'>@thumbnail</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="title-instance_method">
+  
+    - (<tt>Object</tt>) <strong>title</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The title of the link.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+88
+89
+90</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redditkit/link.rb', line 88</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_title'>title</span>
+  <span class='ivar'>@title</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="url-instance_method">
+  
+    - (<tt>Object</tt>) <strong>url</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The link&#39;s URL. This will be a link to the post on reddit if the link
+is a self post.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+91
+92
+93</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redditkit/link.rb', line 91</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_url'>url</span>
+  <span class='ivar'>@url</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id=""></span>
+      <div class="method_details ">
+  <h3 class="signature " id="visited-instance_method">
+  
+    - (<tt>Object</tt>) <strong>visited</strong>  <span class="extras">(readonly)</span>
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Whether the link has been visited by the current user. Requires that the
+current user have reddit gold.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+94
+95
+96</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redditkit/link.rb', line 94</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_visited'>visited</span>
+  <span class='ivar'>@visited</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+
+  <div id="instance_method_details" class="method_details_list">
+    <h2>Instance Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="image_link?-instance_method">
+  
+    - (<tt>Boolean</tt>) <strong>image_link?</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Determines whether a link has an image URL.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+122
+123
+124
+125</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redditkit/link.rb', line 122</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_image_link?'>image_link?</span>
+  <span class='id identifier rubyid_extensions'>extensions</span> <span class='op'>=</span> <span class='qwords_beg'>%w(</span><span class='tstring_content'>.png</span><span class='words_sep'> </span><span class='tstring_content'>.jpg</span><span class='words_sep'> </span><span class='tstring_content'>.jpeg</span><span class='words_sep'> </span><span class='tstring_content'>.gif</span><span class='words_sep'>)</span>
+  <span class='id identifier rubyid_extensions'>extensions</span><span class='period'>.</span><span class='id identifier rubyid_any?'>any?</span><span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_extension'>extension</span><span class='op'>|</span> <span class='id identifier rubyid_url'>url</span><span class='period'>.</span><span class='id identifier rubyid_end_with?'>end_with?</span> <span class='id identifier rubyid_extension'>extension</span> <span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="short_link-instance_method">
+  
+    - (<tt>String</tt>) <strong>short_link</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the short URL for a link.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+  <div class="examples">
+    <p class="tag_title">Examples:</p>
+    
+      
+        <p class="example_title"><div class='inline'>
+<p><a href="http://redd.it/link-id">redd.it/link-id</a>.</p>
+</div></p>
+      
+      <pre class="example code"><code></code></pre>
+    
+  </div>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+135
+136
+137</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redditkit/link.rb', line 135</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_short_link'>short_link</span>
+  <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>http://redd.it/</span><span class='tstring_end'>&#39;</span></span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_id'>id</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="showing_link_score?-instance_method">
+  
+    - (<tt>Boolean</tt>) <strong>showing_link_score?</strong> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Determines whether a link is showing its score. reddit doesn&#39;t display
+scores for links less than two hours old.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+111
+112
+113
+114
+115
+116
+117</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/redditkit/link.rb', line 111</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_showing_link_score?'>showing_link_score?</span>
+  <span class='id identifier rubyid_current_time'>current_time</span> <span class='op'>=</span> <span class='const'>Time</span><span class='period'>.</span><span class='id identifier rubyid_now'>now</span>
+  <span class='id identifier rubyid_submission_time'>submission_time</span> <span class='op'>=</span> <span class='id identifier rubyid_created_at'>created_at</span>
+
+  <span class='id identifier rubyid_difference'>difference</span> <span class='op'>=</span> <span class='lparen'>(</span><span class='id identifier rubyid_current_time'>current_time</span> <span class='op'>-</span> <span class='id identifier rubyid_submission_time'>submission_time</span><span class='rparen'>)</span> <span class='op'>/</span> <span class='int'>60</span> <span class='op'>/</span> <span class='int'>60</span>
+  <span class='id identifier rubyid_difference'>difference</span> <span class='op'>&gt;=</span> <span class='int'>2</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+    <div id="footer">
+  Generated on Sat Nov  9 08:09:56 2013 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7 (ruby-2.0.0).
+</div>
+
+  </body>
+</html>
