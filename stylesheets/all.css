@@ -1,48 +1,48 @@
-/* line 2, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/neat/grid/_grid.scss */
+/* line 2, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/neat/grid/_grid.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* line 4, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_base.scss */
+/* line 4, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_base.scss */
 ::selection {
   background-color: rgba(0, 0, 0, 0.1); }
 
-/* line 8, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_base.scss */
+/* line 8, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_base.scss */
 html {
   font-family: "source-sans-pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   -webkit-font-smoothing: antialiased;
   background: #F5F2E4;
-  color: #4f4036; }
+  color: #4F4036; }
 
-/* line 16, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_base.scss */
+/* line 16, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_base.scss */
 h1 {
   margin: 0px;
   font-size: 42px;
   font-weight: 600; }
 
-/* line 23, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_base.scss */
+/* line 23, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_base.scss */
 h2 {
   margin: 0px;
   font-size: 21px;
   font-weight: normal; }
   @media screen and (max-width: 320px) {
-    /* line 23, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_base.scss */
+    /* line 23, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_base.scss */
     h2 {
       font-size: 18px; } }
 
-/* line 34, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_base.scss */
+/* line 34, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_base.scss */
 h3 {
   margin: 0px 0px 7px 0px;
   line-height: 28px;
   font-size: 29px;
   font-weight: 600; }
   @media screen and (max-width: 320px) {
-    /* line 34, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_base.scss */
+    /* line 34, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_base.scss */
     h3 {
       font-size: 22px; } }
 
-/* line 47, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_base.scss */
+/* line 47, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_base.scss */
 .feature-image {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -52,52 +52,52 @@ h3 {
   background-repeat: no-repeat;
   background-position: center center; }
 
-/* line 59, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_base.scss */
+/* line 59, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_base.scss */
 .lock {
   background-image: url(/images/features/lock.png); }
 
-/* line 63, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_base.scss */
+/* line 63, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_base.scss */
 .complete-coverage {
   background-image: url(/images/features/complete.png); }
 
-/* line 67, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_base.scss */
+/* line 67, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_base.scss */
 .wrench {
   background-image: url(/images/features/wrench.png); }
 
 @media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
-  /* line 72, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_base.scss */
+  /* line 72, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_base.scss */
   .lock {
     background-image: url(/images/features/lock@2x.png); }
 
-  /* line 76, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_base.scss */
+  /* line 76, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_base.scss */
   .complete-coverage {
     background-image: url(/images/features/complete@2x.png); }
 
-  /* line 79, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_base.scss */
+  /* line 79, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_base.scss */
   .wrench {
     background-image: url(/images/features/wrench@2x.png); } }
-/* line 84, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_base.scss */
+/* line 84, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_base.scss */
 .feature-item {
   display: block;
   float: left;
   margin-right: 4.47791%;
   width: 30.34806%; }
-  /* line 54, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/neat/grid/_span-columns.scss */
+  /* line 54, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/neat/grid/_span-columns.scss */
   .feature-item:last-child {
     margin-right: 0; }
-  /* line 87, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_base.scss */
+  /* line 87, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_base.scss */
   .feature-item h4 {
     margin-top: 10px;
     margin-bottom: 7px;
     font-size: 17px;
     font-weight: 600;
     text-align: center; }
-  /* line 97, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_base.scss */
+  /* line 97, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_base.scss */
   .feature-item p {
     font-size: 15px;
     text-align: center; }
   @media screen and (max-width: 320px) {
-    /* line 84, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_base.scss */
+    /* line 84, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_base.scss */
     .feature-item {
       display: block;
       float: left;
@@ -105,16 +105,16 @@ h3 {
       width: 100%;
       margin-bottom: 30px;
       margin-right: 0px; }
-      /* line 54, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/neat/grid/_span-columns.scss */
+      /* line 54, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/neat/grid/_span-columns.scss */
       .feature-item:last-child {
         margin-right: 0; }
-      /* line 108, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_base.scss */
+      /* line 108, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_base.scss */
       .feature-item:last-child {
         margin-bottom: 0px; } }
 
-/* line 114, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_base.scss */
+/* line 114, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_base.scss */
 a {
-  color: #4f4036;
+  color: #4F4036;
   border-bottom: 1px solid #D9D5C4;
   text-decoration: none;
   -webkit-transition: border-bottom 0.3s;
@@ -123,46 +123,46 @@ a {
   -o-transition: border-bottom 0.3s;
   transition: border-bottom 0.3s; }
 
-/* line 122, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_base.scss */
+/* line 122, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_base.scss */
 a:hover {
-  border-bottom: 1px solid #8a7b72; }
+  border-bottom: 1px solid #8A7B72; }
 
-/* line 126, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_base.scss */
+/* line 126, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_base.scss */
 p {
-  color: #8a7b72;
+  color: #8A7B72;
   margin: 0px;
   font-size: 19px; }
   @media screen and (max-width: 320px) {
-    /* line 126, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_base.scss */
+    /* line 126, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_base.scss */
     p {
       font-size: 15px; } }
 
-/* line 136, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_base.scss */
+/* line 136, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_base.scss */
 .code-section {
   margin-top: 10px;
   background: #E8E4D0;
   border-radius: 4px;
-  box-shadow: 0px 1px 0px 0px #fafaf7, inset 0px 1px 2px 0px rgba(0, 0, 0, 0.21), inset 0px 0px 2px 0px rgba(0, 0, 0, 0.38); }
-  /* line 144, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_base.scss */
+  box-shadow: 0px 1px 0px 0px #FAFAF7, inset 0px 1px 2px 0px rgba(0, 0, 0, 0.21), inset 0px 0px 2px 0px rgba(0, 0, 0, 0.38); }
+  /* line 144, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_base.scss */
   .code-section pre {
     font-family: 'source-code-pro', 'Menlo', sans-serif;
     font-size: 13px;
     line-height: 20px; }
     @media screen and (max-width: 320px) {
-      /* line 144, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_base.scss */
+      /* line 144, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_base.scss */
       .code-section pre {
         font-size: 11px;
         line-height: 17px; } }
 
-/* line 156, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_base.scss */
+/* line 156, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_base.scss */
 .code-section-title {
   margin-top: 30px;
   text-align: center; }
-  /* line 160, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_base.scss */
+  /* line 160, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_base.scss */
   .code-section-title:nth-of-type(1) {
     margin-top: 0px; }
 
-/* line 165, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_base.scss */
+/* line 165, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_base.scss */
 .code-example-selection {
   margin: 0px 15px;
   padding: 4px 0px;
@@ -170,7 +170,7 @@ p {
   text-align: center;
   cursor: pointer; }
 
-/* line 175, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_base.scss */
+/* line 175, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_base.scss */
 .code-example-language {
   margin-right: 7px;
   border-bottom: none;
@@ -180,19 +180,19 @@ p {
   opacity: 0.25;
   text-decoration: none;
   text-shadow: 0px 1px 1px #FAFAF7; }
-  /* line 188, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_base.scss */
+  /* line 188, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_base.scss */
   .code-example-language:hover {
     border: none; }
   @media screen and (max-width: 320px) {
-    /* line 175, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_base.scss */
+    /* line 175, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_base.scss */
     .code-example-language {
       font-size: 11px; } }
 
-/* line 197, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_base.scss */
+/* line 197, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_base.scss */
 .active {
   opacity: 0.7; }
 
-/* line 201, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_base.scss */
+/* line 201, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_base.scss */
 pre {
   margin: 0px;
   padding: 12px 15px;
@@ -205,34 +205,34 @@ pre {
   word-wrap: normal;
   white-space: pre; }
 
-/* line 215, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_base.scss */
+/* line 215, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_base.scss */
 #credit {
   margin: 50px 0px 25px 0px;
   color: #BBA89D;
   font-size: 15px; }
   @media screen and (max-width: 320px) {
-    /* line 215, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_base.scss */
+    /* line 215, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_base.scss */
     #credit {
       font-size: 13px;
       line-height: 22px; } }
 
-/* line 227, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_base.scss */
+/* line 227, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_base.scss */
 .mobile-break {
   display: none; }
   @media screen and (max-width: 520px) {
-    /* line 227, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_base.scss */
+    /* line 227, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_base.scss */
     .mobile-break {
       display: block; } }
 
-/* line 235, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_base.scss */
+/* line 235, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_base.scss */
 #credit a {
-  color: #8a7b72; }
+  color: #8A7B72; }
 
-/* line 239, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_base.scss */
+/* line 239, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_base.scss */
 #credit a:hover {
-  border-bottom: 1px solid #8a7b72; }
+  border-bottom: 1px solid #8A7B72; }
 
-/* line 1, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_layout.scss */
+/* line 1, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_layout.scss */
 #content {
   *zoom: 1;
   max-width: 42.5em;
@@ -242,82 +242,82 @@ pre {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0px 30px; }
-  /* line 18, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/bourbon/addons/_clearfix.scss */
+  /* line 17, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/bourbon/addons/_clearfix.scss */
   #content:before, #content:after {
     content: " ";
     display: table; }
-  /* line 23, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/bourbon/addons/_clearfix.scss */
+  /* line 23, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/bourbon/addons/_clearfix.scss */
   #content:after {
     clear: both; }
 
-/* line 8, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_layout.scss */
+/* line 8, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_layout.scss */
 .feature, .wrap-up {
   padding: 50px 0px 60px 0px;
   border-top: 1px solid #E3DECA;
   *zoom: 1; }
-  /* line 18, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/bourbon/addons/_clearfix.scss */
+  /* line 17, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/bourbon/addons/_clearfix.scss */
   .feature:before, .feature:after, .wrap-up:before, .wrap-up:after {
     content: " ";
     display: table; }
-  /* line 23, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/bourbon/addons/_clearfix.scss */
+  /* line 23, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/bourbon/addons/_clearfix.scss */
   .feature:after, .wrap-up:after {
     clear: both; }
 
-/* line 15, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_layout.scss */
+/* line 15, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_layout.scss */
 header {
   margin: 75px 0px 50px 0px;
   text-align: none; }
   @media screen and (max-width: 320px) {
-    /* line 15, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_layout.scss */
+    /* line 15, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_layout.scss */
     header {
       margin: 50px 0px 50px 0px; } }
 
-/* line 24, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_layout.scss */
+/* line 24, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_layout.scss */
 header nav {
   overflow: hidden;
   margin-bottom: 40px; }
   @media screen and (max-width: 520px) {
-    /* line 24, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_layout.scss */
+    /* line 24, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_layout.scss */
     header nav {
       margin-bottom: 10px; } }
 
-/* line 33, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_layout.scss */
+/* line 33, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_layout.scss */
 #title {
   display: inline-block;
   margin-top: 2px;
   font-size: 30px;
   text-align: left; }
   @media screen and (max-width: 520px) {
-    /* line 33, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_layout.scss */
+    /* line 33, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_layout.scss */
     #title {
       display: block;
       font-size: 34px;
       text-align: center; } }
 
-/* line 48, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_layout.scss */
+/* line 48, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_layout.scss */
 #main-navigation .buttons {
   float: right; }
   @media screen and (max-width: 520px) {
-    /* line 48, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_layout.scss */
+    /* line 48, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_layout.scss */
     #main-navigation .buttons {
       display: none;
       float: none; } }
 
-/* line 57, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_layout.scss */
+/* line 57, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_layout.scss */
 .mobile {
   display: none;
   text-align: center; }
   @media screen and (max-width: 520px) {
-    /* line 57, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_layout.scss */
+    /* line 57, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_layout.scss */
     .mobile {
       display: block;
       margin-top: 15px; } }
 
-/* line 67, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_layout.scss */
+/* line 67, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_layout.scss */
 .wrap-up .buttons {
   margin: 25px 0px; }
 
-/* line 1, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_modules.scss */
+/* line 1, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_modules.scss */
 .button {
   color: #67A14F;
   font-size: 16px;
@@ -331,23 +331,23 @@ header nav {
   -webkit-transition: all 0.25s;
   transition: all 0.25s;
   text-align: center; }
-  /* line 21, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_modules.scss */
+  /* line 21, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_modules.scss */
   .button:hover {
     color: #F5F2E4;
     background: #67A14F;
     border: 2px solid #67A14F; }
   @media screen and (max-width: 320px) {
-    /* line 1, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_modules.scss */
+    /* line 1, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_modules.scss */
     .button {
       font-size: 14px;
       padding: 5px 1px 3px 1px;
       width: 120px; } }
 
-/* line 34, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_modules.scss */
+/* line 34, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_modules.scss */
 .wf-active .button {
   font-weight: 600; }
   @media screen and (max-width: 320px) {
-    /* line 34, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/_modules.scss */
+    /* line 34, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_modules.scss */
     .wf-active .button {
       width: 123px; } }
 
@@ -356,7 +356,7 @@ header nav {
 github.com style (c) Vasily Polovnyov <vast@whiteants.net>
 
 */
-/* line 14, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/github.css */
+/* line 11, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/github.css */
 pre .comment,
 pre .template_comment,
 pre .diff .header,
@@ -364,7 +364,7 @@ pre .javadoc {
   color: #998;
   font-style: italic; }
 
-/* line 26, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/github.css */
+/* line 19, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/github.css */
 pre .keyword,
 pre .css .rule .keyword,
 pre .winutils,
@@ -376,33 +376,33 @@ pre .status {
   color: #333;
   font-weight: bold; }
 
-/* line 33, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/github.css */
+/* line 31, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/github.css */
 pre .number,
 pre .hexcolor,
 pre .ruby .constant {
   color: #099; }
 
-/* line 40, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/github.css */
+/* line 37, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/github.css */
 pre .string,
 pre .tag .value,
 pre .phpdoc,
 pre .tex .formula {
-  color: #dd1144; }
+  color: #d14; }
 
-/* line 45, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/github.css */
+/* line 44, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/github.css */
 pre .title,
 pre .id {
   color: #900;
   font-weight: bold; }
 
-/* line 53, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/github.css */
+/* line 50, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/github.css */
 pre .javascript .title,
 pre .lisp .title,
 pre .clojure .title,
 pre .subst {
   font-weight: normal; }
 
-/* line 60, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/github.css */
+/* line 57, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/github.css */
 pre .class .title,
 pre .haskell .type,
 pre .vhdl .literal,
@@ -410,7 +410,7 @@ pre .tex .command {
   color: #458;
   font-weight: bold; }
 
-/* line 68, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/github.css */
+/* line 65, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/github.css */
 pre .tag,
 pre .tag .title,
 pre .rules .property,
@@ -418,22 +418,22 @@ pre .django .tag .keyword {
   color: #000080;
   font-weight: normal; }
 
-/* line 75, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/github.css */
+/* line 73, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/github.css */
 pre .attribute,
 pre .variable,
 pre .lisp .body {
-  color: teal; }
+  color: #008080; }
 
-/* line 79, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/github.css */
+/* line 79, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/github.css */
 pre .regexp {
   color: #009926; }
 
-/* line 83, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/github.css */
+/* line 83, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/github.css */
 pre .class {
   color: #458;
   font-weight: bold; }
 
-/* line 92, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/github.css */
+/* line 88, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/github.css */
 pre .symbol,
 pre .ruby .symbol .string,
 pre .lisp .keyword,
@@ -441,13 +441,13 @@ pre .tex .special,
 pre .prompt {
   color: #990073; }
 
-/* line 98, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/github.css */
+/* line 96, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/github.css */
 pre .built_in,
 pre .lisp .title,
 pre .clojure .built_in {
   color: #0086b3; }
 
-/* line 106, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/github.css */
+/* line 102, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/github.css */
 pre .preprocessor,
 pre .pi,
 pre .doctype,
@@ -456,86 +456,86 @@ pre .cdata {
   color: #999;
   font-weight: bold; }
 
-/* line 111, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/github.css */
+/* line 111, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/github.css */
 pre .deletion {
-  background: #ffdddd; }
+  background: #fdd; }
 
-/* line 115, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/github.css */
+/* line 115, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/github.css */
 pre .addition {
-  background: #ddffdd; }
+  background: #dfd; }
 
-/* line 119, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/github.css */
+/* line 119, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/github.css */
 pre .diff .change {
   background: #0086b3; }
 
-/* line 123, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/github.css */
+/* line 123, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/github.css */
 pre .chunk {
-  color: #aaaaaa; }
+  color: #aaa; }
 
-/* line 11, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/all.scss */
+/* line 11, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/all.scss */
 #description {
-  color: #8a7b72;
+  color: #8A7B72;
   text-align: center; }
   @media screen and (max-width: 320px) {
-    /* line 11, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/all.scss */
+    /* line 11, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/all.scss */
     #description {
       font-size: 16px; } }
 
-/* line 20, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/all.scss */
+/* line 20, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/all.scss */
 ul {
   margin: 0px;
   padding: 0px;
   list-style: none; }
 
-/* line 27, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/all.scss */
+/* line 27, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/all.scss */
 ul li {
   margin-right: 10px;
   display: inline; }
 
-/* line 32, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/all.scss */
+/* line 32, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/all.scss */
 ul li:last-child {
   margin-right: 0px; }
 
 @media screen and (max-width: 320px) {
-  /* line 36, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/all.scss */
+  /* line 36, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/all.scss */
   .buttons {
     margin-top: 25px;
     float: none; } }
 
-/* line 43, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/all.scss */
+/* line 43, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/all.scss */
 .feature-section {
   position: relative; }
 
-/* line 47, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/all.scss */
+/* line 47, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/all.scss */
 .feature-description {
   margin-bottom: 30px;
   text-align: center; }
   @media screen and (max-width: 320px) {
-    /* line 47, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/all.scss */
+    /* line 47, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/all.scss */
     .feature-description {
       margin-bottom: 25px; } }
 
-/* line 56, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/all.scss */
+/* line 56, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/all.scss */
 .wrap-up {
   padding-bottom: 0px;
   text-align: center; }
-  /* line 60, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/all.scss */
+  /* line 60, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/all.scss */
   .wrap-up h1 {
     font-size: 28px;
     margin-bottom: 15px; }
     @media screen and (max-width: 320px) {
-      /* line 60, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/all.scss */
+      /* line 60, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/all.scss */
       .wrap-up h1 {
         font-size: 22px; } }
-  /* line 69, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/all.scss */
+  /* line 69, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/all.scss */
   .wrap-up h2 {
     margin-top: 25px; }
-  /* line 73, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/all.scss */
+  /* line 73, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/all.scss */
   .wrap-up p {
     margin-top: 0px;
     font-size: 18px; }
     @media screen and (max-width: 320px) {
-      /* line 73, /Users/samsymons/Dropbox/Projects/RedditKit/Website/source/stylesheets/all.scss */
+      /* line 73, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/all.scss */
       .wrap-up p {
         font-size: 14px;
         margin-bottom: 10px; } }
