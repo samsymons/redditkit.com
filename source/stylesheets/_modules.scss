@@ -2,7 +2,7 @@
   color: #67A14F;
 
   font-size: 16px;
-  font-weight: normal;
+  font-weight: 500;
   line-height: 22px;
 
   border-radius: 50px;
@@ -32,8 +32,6 @@
 }
 
 .wf-active .button {
-  font-weight: 600;
-
   @include media($mobile) {
     width: 123px;
   }
