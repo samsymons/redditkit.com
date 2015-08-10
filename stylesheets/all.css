@@ -145,7 +145,7 @@ p {
   box-shadow: 0px 1px 0px 0px #FAFAF7, inset 0px 1px 2px 0px rgba(0, 0, 0, 0.21), inset 0px 0px 2px 0px rgba(0, 0, 0, 0.38); }
   /* line 144, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_base.scss */
   .code-section pre {
-    font-family: 'source-code-pro', 'Menlo', sans-serif;
+    font-family: 'Source Code Pro', 'Menlo', sans-serif;
     font-size: 13px;
     line-height: 20px; }
     @media screen and (max-width: 320px) {
