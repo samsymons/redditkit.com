@@ -10,7 +10,7 @@
 
 /* line 8, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_base.scss */
 html {
-  font-family: "source-sans-pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-family: "Avenir Next", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   -webkit-font-smoothing: antialiased;
   background: #F5F2E4;
   color: #4F4036; }
@@ -19,7 +19,7 @@ html {
 h1 {
   margin: 0px;
   font-size: 42px;
-  font-weight: 600; }
+  font-weight: 500; }
 
 /* line 23, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_base.scss */
 h2 {
@@ -286,6 +286,7 @@ header nav {
   display: inline-block;
   margin-top: 2px;
   font-size: 30px;
+  font-weight: 500;
   text-align: left; }
   @media screen and (max-width: 520px) {
     /* line 33, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_layout.scss */
@@ -294,26 +295,26 @@ header nav {
       font-size: 34px;
       text-align: center; } }
 
-/* line 48, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_layout.scss */
+/* line 49, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_layout.scss */
 #main-navigation .buttons {
   float: right; }
   @media screen and (max-width: 520px) {
-    /* line 48, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_layout.scss */
+    /* line 49, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_layout.scss */
     #main-navigation .buttons {
       display: none;
       float: none; } }
 
-/* line 57, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_layout.scss */
+/* line 58, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_layout.scss */
 .mobile {
   display: none;
   text-align: center; }
   @media screen and (max-width: 520px) {
-    /* line 57, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_layout.scss */
+    /* line 58, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_layout.scss */
     .mobile {
       display: block;
       margin-top: 15px; } }
 
-/* line 67, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_layout.scss */
+/* line 68, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_layout.scss */
 .wrap-up .buttons {
   margin: 25px 0px; }
 
@@ -321,7 +322,7 @@ header nav {
 .button {
   color: #67A14F;
   font-size: 16px;
-  font-weight: normal;
+  font-weight: 500;
   line-height: 22px;
   border-radius: 50px;
   display: inline-block;
@@ -343,13 +344,10 @@ header nav {
       padding: 5px 1px 3px 1px;
       width: 120px; } }
 
-/* line 34, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_modules.scss */
-.wf-active .button {
-  font-weight: 600; }
-  @media screen and (max-width: 320px) {
-    /* line 34, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_modules.scss */
-    .wf-active .button {
-      width: 123px; } }
+@media screen and (max-width: 320px) {
+  /* line 34, /Users/samsymons/Code/RedditKit/Website/source/stylesheets/_modules.scss */
+  .wf-active .button {
+    width: 123px; } }
 
 /*
 
